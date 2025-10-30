@@ -26,17 +26,27 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'ARIAL', sans-serif;
-    background-color: var(--SERENIDADE-ESPIRITUAL);
+    background-color: var(--AZUL-CALMO-CEU);
     color: #333;
     line-height: 1.6;
 }
+/*menu hamburguer*/
+button {
+    display: inline-block;
+}
 .menu-hamburguer {
-    display: block;
+    display: inline-block;
     cursor: pointer;
+     background-color: black;
+    padding: var(--tamanho-fonte-media);
+     margin: var(--tamanho-fonte-media);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black
+
 }
 .menu-hamburguer span{
     font-size: var(--tamanho-fonte-media);
-    display: block;
+    display: inline-block;
     color: white;
     background-color: yellowgreen;
 }
@@ -54,4 +64,44 @@ body {
     text-decoration: none;
     font-weight: 400;
 }
+.menu.ativo{
+    display: block
+}
+/*logo*/
+h1:hover {
+    color: white;
+    font-size: var(--tamanho-fonte-maior);
+    cursor: pointer;
+}
+/*aside*/
+aside {
+    background-color: var(--SERENIDADE-ESPIRITUAL);
+    padding: var(--tamanho-fonte-grande);
+    margin: var(--tamanho-fonte-media);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+    font-size: var(--tamanho-fonte-media);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: var(--tamanho-fonte-media);
+    border: 2px solid black;
+    margin: var(--tamanho-fonte-media);
+    border-radius: var(--tamanho-fonte-pequena)
+}
+aside h2:hover {
+    font-size: var(--tamanho-fonte-maior);
+    color: var(--LARANJA-DOCE);
+    cursor: pointer;
+}
+p {
+    margin-top: var(--tamanho-fonte-media);
+    text-align: center;
+    font-size: var(--tamanho-fonte-media);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 
