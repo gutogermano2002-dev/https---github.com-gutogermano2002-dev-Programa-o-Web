@@ -33,12 +33,6 @@ body {
 .menu-hamburguer {
     display: block;
     cursor: pointer;
-    margin: var(--tamanho-fonte-media);
-    padding: var(--tamanho-fonte-media);
-    font-weight: 400;
-    width: fit-content;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .menu-hamburguer span{
     font-size: var(--tamanho-fonte-media);
