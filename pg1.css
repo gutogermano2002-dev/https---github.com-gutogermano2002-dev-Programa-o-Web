@@ -1,0 +1,63 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*reset end*/
+/*variaveis*/
+:root {
+    --cor-cura-vida-nova:#7ccf7A;
+    --AZUL-CALMO-CEU:#a3cef1;
+    --SUAVE-AMARELO:#f9f7cf;
+    --LARANJA-DOCE:#f6bd60;
+    --SERENIDADE-ESPIRITUAL:#f7ede2;
+}
+/*variaveis texto*/
+:root {
+    --tamanho-fonte-pequena:8px;
+    --tamanho-fonte-media:16px;
+    --tamanho-fonte-grande:24px;
+    --tamanho-fonte-maior:32px;
+}
+/*variaveis end*/
+/*estilos globais*/
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'ARIAL', sans-serif;
+    background-color: var(--SERENIDADE-ESPIRITUAL);
+    color: #333;
+    line-height: 1.6;
+}
+.menu-hamburguer {
+    display: block;
+    cursor: pointer;
+    margin: var(--tamanho-fonte-media);
+    padding: var(--tamanho-fonte-media);
+    font-weight: 400;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-hamburguer span{
+    font-size: var(--tamanho-fonte-media);
+    display: block;
+    color: white;
+    background-color: yellowgreen;
+}
+.menu{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    margin: var(--tamanho-fonte-media);
+    padding: var(--tamanho-fonte-pequena);
+}
+.menu li {
+    margin: var(--tamanho-fonte-media);
+}
+.menu li a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
