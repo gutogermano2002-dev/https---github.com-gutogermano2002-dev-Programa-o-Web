@@ -23,14 +23,12 @@
 /*variaveis end*/
 /*estilos globais*/
 body {
-    display: flex;
-    flex-direction: column;
     font-family: 'ARIAL', sans-serif;
     background-color: var(--AZUL-CALMO-CEU);
     color: #333;
     line-height: 1.6;
 }
-/*menu hamburguer*/
+/*menu hamburguer/tornandoresponsivo para celular*/
 button {
     display: inline-block;
 }
@@ -83,25 +81,41 @@ aside {
     font-size: var(--tamanho-fonte-media);
     font-family: Arial, Helvetica, sans-serif;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    padding: var(--tamanho-fonte-media);
-    border: 2px solid black;
-    margin: var(--tamanho-fonte-media);
-    border-radius: var(--tamanho-fonte-pequena)
-}
 aside h2:hover {
     font-size: var(--tamanho-fonte-maior);
     color: var(--LARANJA-DOCE);
     cursor: pointer;
 }
-p {
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--SUAVE-AMARELO);
+    border:var(--tamanho-fonte-pequena);
+    padding: var(--tamanho-fonte-pequena);
+    box-shadow: var(--tamanho-fonte-pequena);
+    border-radius: var(--tamanho-fonte-pequena);
+    border-bottom: var(--tamanho-fonte-pequena);
+}
+.um{
     margin-top: var(--tamanho-fonte-media);
     text-align: center;
-    font-size: var(--tamanho-fonte-media);
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-
+    display: flex;
+    border: 5px solid var(--cor-cura-vida-nova);
+    border-radius: var(--tamanho-fonte-pequena);
+    box-shadow: var(--tamanho-fonte-pequena);
+    flex-direction: column;
+    background-color: var(--cor-cura-vida-nova);
+    color: black;
+}
+img {
+    display: block;
+    margin: var(--tamanho-fonte-media) auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--tamanho-fonte-pequena);
+    box-shadow: 0 4px 6px black;
 }
 
 

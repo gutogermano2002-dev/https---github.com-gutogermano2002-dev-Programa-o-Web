@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+}
+@media (max-width: 600px) {
+  body
+  {
+    font-size: var(--space-2);
+    margin: 1px;
+    padding: var(--space-1);
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+   body
+  {
+    font-size: var(--space-2);
+    margin: 2px;
+    padding: var(--space-1);
+  }
+}
+@media (min-width: 1024px) {
+   body
+  {
+    font-size: var(--space-3);
+    margin: 3px;
+    padding: var(--space-2);
+  }
+}
+body{
+    border: var(--space-2);
+    padding: var(--space-2);
+    margin: var(--space-2) solid black;
+    display: grid;
+    background-image: url("celebre-o-dia-nacional-da-adocao-de-animais_0.jpg");
+    background-size: cover;       /* cobre toda a tela */
+    background-position: center;  /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição */
+}
+@media (min-width: 360px) and (max-width: 600px) {
+  header{
+    font-size: var(--space-2);
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+   header{
+    font-size: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+   header{
+    font-size: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+}
+header{
+    margin-bottom: var(--space-3);
+     background-color: transparent;
+    padding: var(--space-1);
+    margin-bottom: var(--space-3);
+    border-radius: 5px;
+    border-bottom: var(--space-2) solid gray;
+    box-shadow: 2px 2px 5px gray;
+    display: grid;
+    justify-content: center;
+}
+
+h1:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+}
+@media (min-width: 360px) and (max-width: 600px) {
+  form{
+    font-size: var(--space-2);
+    margin: 1px;
+    padding: var(--space-1);
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+   form{
+    font-size: var(--space-2);
+    margin: 2px;
+    padding: var(--space-1);
+  }
+}   
+@media (min-width: 1024px) and (max-width: 1920px) {
+   form{
+    font-size: var(--space-3);
+    margin: 3px;
+    padding: var(--space-2);
+  }
+}
+form{
+    background: transparent;
+    padding: var(--space-3);
+    border-radius: var(--space-1);
+    box-shadow: 2px 2px 5px gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    width: 100%;
+    weight: auto;
+}
