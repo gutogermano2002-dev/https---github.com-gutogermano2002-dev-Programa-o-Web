@@ -24,18 +24,29 @@
 /*estilos globais*/
 body {
     font-family: 'ARIAL', sans-serif;
-    background-color: var(--AZUL-CALMO-CEU);
-    color: #333;
+    background-color: var(--SERENIDADE-ESPIRITUAL);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+header{
+    background-color: black;
+}
+summary{
+    color: var(--AZUL-CALMO-CEU);
+    cursor: pointer;
+}
+ul{
+    background-color: var(--SUAVE-AMARELO);
 }
 /*menu hamburguer/tornandoresponsivo para celular*/
-button {
-    display: inline-block;
+button:hover{
+    color: rgb(172, 49, 49);
 }
 .menu-hamburguer {
     display: inline-block;
-    cursor: pointer;
-     background-color: black;
+     background-color: rgb(172, 49, 49);
     padding: var(--tamanho-fonte-media);
      margin: var(--tamanho-fonte-media);
     border-radius: 8px;
@@ -46,7 +57,6 @@ button {
     font-size: var(--tamanho-fonte-media);
     display: inline-block;
     color: white;
-    background-color: yellowgreen;
 }
 .menu{
     list-style: none;
@@ -67,13 +77,22 @@ button {
 }
 /*logo*/
 h1:hover {
-    color: white;
+    color: rgb(204, 86, 86);
     font-size: var(--tamanho-fonte-maior);
     cursor: pointer;
 }
+    h1{
+    color: white;
+    }
+    .Texto{
+        color: var(--AZUL-CALMO-CEU);
+    }
+    h2{
+        color: var(--AZUL-CALMO-CEU);
+    }
 /*aside*/
 aside {
-    background-color: var(--SERENIDADE-ESPIRITUAL);
+    background-color: white;
     padding: var(--tamanho-fonte-grande);
     margin: var(--tamanho-fonte-media);
     border-radius: 8px;
@@ -88,8 +107,9 @@ aside h2:hover {
 }
 main{
     display: flex;
-    flex-direction: column;
-    background-color: var(--SUAVE-AMARELO);
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--SERENIDADE-ESPIRITUAL);
     border:var(--tamanho-fonte-pequena);
     padding: var(--tamanho-fonte-pequena);
     box-shadow: var(--tamanho-fonte-pequena);
@@ -102,12 +122,14 @@ main{
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    border: 5px solid var(--cor-cura-vida-nova);
+    border: 5px solid var(--AZUL-CALMO-CEU);
     border-radius: var(--tamanho-fonte-pequena);
     box-shadow: var(--tamanho-fonte-pequena);
     flex-direction: column;
-    background-color: var(--cor-cura-vida-nova);
+    background-color: var(--AZUL-CALMO-CEU);
     color: black;
+    flex: 1 1 300px;
+    margin: var(--tamanho-fonte-media);
 }
 img {
     display: block;
@@ -117,5 +139,59 @@ img {
     border-radius: var(--tamanho-fonte-pequena);
     box-shadow: 0 4px 6px black;
 }
-
+/*responsividade mobile*/
+@media (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+    details{
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+/*responsividade tablet*/
+@media(min-width: 767px) and (max-width: 1023px){
+    header {
+        width: 80%;
+    }
+    details {
+        width: 80%;
+    }
+    aside {
+        width: 80%;
+    }
+    main {
+        width: 80%;
+    }
+    img {
+        width: 80%;
+    }
+}
+/*rsponsividade desktop*/
+@media(min-width: 1024px){
+    header {
+        width: 80%;
+    }
+    details {
+        width: 80%;
+    }
+    aside {
+        width: 80%;
+    }
+    main {
+        width: 80%;
+    }
+    img {
+        width: 80%;
+    }
+}
+/*fimpg.1*/
 
