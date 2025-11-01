@@ -33,7 +33,7 @@ body {
 header{
     background-color: black;
 }
-summary{
+details{
     color: var(--AZUL-CALMO-CEU);
     cursor: pointer;
 }
@@ -50,8 +50,7 @@ button:hover{
     padding: var(--tamanho-fonte-media);
      margin: var(--tamanho-fonte-media);
     border-radius: 8px;
-    box-shadow: 0 4px 6px black
-
+    box-shadow: 0 4px 6px black;
 }
 .menu-hamburguer span{
     font-size: var(--tamanho-fonte-media);
@@ -73,9 +72,9 @@ button:hover{
     font-weight: 400;
 }
 .menu.ativo{
-    display: block
+    display: flex;
 }
-/*logo*/
+/*nav*/
 h1:hover {
     color: rgb(204, 86, 86);
     font-size: var(--tamanho-fonte-maior);
@@ -87,111 +86,102 @@ h1:hover {
     .Texto{
         color: var(--AZUL-CALMO-CEU);
     }
+    /*aside*/
+    aside{
+        border: var(--tamanho-fonte-pequena);
+        border-radius: 10px;
+        border-bottom: 2px solid black;
+        box-shadow: 0 4px 10px black;
+    }
     h2{
         color: var(--AZUL-CALMO-CEU);
+        background-color: black;
     }
-/*aside*/
-aside {
-    background-color: white;
-    padding: var(--tamanho-fonte-grande);
-    margin: var(--tamanho-fonte-media);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px black;
-    font-size: var(--tamanho-fonte-media);
-    font-family: Arial, Helvetica, sans-serif;
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--SUAVE-AMARELO);
+    }
+    /*formulário*/
+form{
+  height: 100vh; /* altura da tela */
+  background-image: url("gato-domestico-cinza-fofo-com-cabelo-comprido-mostrando-sua-afeicao-por-um-cachorro-marrom-com-cabelo-comprido\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  border: var(--tamanho-fonte-pequena);
+  border-radius: 10px;
+  border-bottom: 2px solid black;
+  box-shadow: 0 4px 10px black;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-aside h2:hover {
-    font-size: var(--tamanho-fonte-maior);
-    color: var(--LARANJA-DOCE);
-    cursor: pointer;
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: var(--SERENIDADE-ESPIRITUAL);
-    border:var(--tamanho-fonte-pequena);
-    padding: var(--tamanho-fonte-pequena);
-    box-shadow: var(--tamanho-fonte-pequena);
-    border-radius: var(--tamanho-fonte-pequena);
-    border-bottom: var(--tamanho-fonte-pequena);
-}
-.um{
-    margin-top: var(--tamanho-fonte-media);
-    text-align: center;
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    border: 5px solid var(--AZUL-CALMO-CEU);
-    border-radius: var(--tamanho-fonte-pequena);
-    box-shadow: var(--tamanho-fonte-pequena);
-    flex-direction: column;
-    background-color: var(--AZUL-CALMO-CEU);
-    color: black;
-    flex: 1 1 300px;
-    margin: var(--tamanho-fonte-media);
-}
-img {
-    display: block;
-    margin: var(--tamanho-fonte-media) auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--tamanho-fonte-pequena);
-    box-shadow: 0 4px 6px black;
-}
-/*responsividade mobile*/
-@media (max-width: 767px) {
+/*deixando responsivo mobile*/
+@media (max-width: 767px) { 
     header {
+        width: 100%;
+    }
+    nav {
         width: 100%;
     }
     details{
+        width: 100%; 
+    }
+    aside{
+         width: 100%;
+    }
+    main{
         width: 100%;
     }
-    aside {
-        width: 100%;
-    }
-    main {
-        width: 100%;
-    }
-    img {
+    form{
         width: 100%;
     }
 }
-/*responsividade tablet*/
-@media(min-width: 767px) and (max-width: 1023px){
-    header {
+/*tablets*/
+@media (min-widht: 767px) and (max-width: 1024px){
+      header {
         width: 80%;
     }
-    details {
+    nav {
         width: 80%;
     }
-    aside {
+    details{
+        width: 80%; 
+    }
+    aside{
+         width: 80%;
+    }
+    main{
+        width: 80%;
+}
+    form{
+    width: 80%;
+}
+}
+/*responsividade desktop*/
+@media (min-width: 1024px){
+      header {
         width: 80%;
     }
-    main {
+    nav {
         width: 80%;
     }
-    img {
+    details{
+        width: 80%; 
+    }
+    aside{
+         width: 80%;
+    }
+    main{
+        width: 80%;
+    }
+    form{
         width: 80%;
     }
 }
-/*rsponsividade desktop*/
-@media(min-width: 1024px){
-    header {
-        width: 80%;
-    }
-    details {
-        width: 80%;
-    }
-    aside {
-        width: 80%;
-    }
-    main {
-        width: 80%;
-    }
-    img {
-        width: 80%;
-    }
-}
-/*fimpg.1*/
-
