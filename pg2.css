@@ -32,7 +32,7 @@ body {
 header{
     background-color: black;
 }
-summary{
+details{
     color: var(--AZUL-CALMO-CEU);
     cursor: pointer;
 }
@@ -80,15 +80,17 @@ h1:hover {
     font-size: var(--tamanho-fonte-maior);
     cursor: pointer;
 }
-    h1{
+h1{
+    color: white;
+    font-size: var(--tamanho-fonte-maior);
+    }
+h2{
     color: black;
-    }
-    .Texto{
-        color: var(--AZUL-CALMO-CEU);
-    }
-    h2{
-        color: var(--AZUL-CALMO-CEU);
-    }
+    font-size: var(--tamanho-fonte-maior);
+}
+h2:hover{
+    color: rgb(204, 86, 86);
+}
 /*aside*/
 aside {
     background-color: white;
@@ -107,10 +109,11 @@ aside h2:hover {
 header{
     background-color: black;
 }
-article{
+main{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.5em;
-    text-align: justify;
+    text-align: center;
+    font-size: 1.5rem;
 }
 h2{
     color: black;
@@ -119,38 +122,38 @@ h2{
 .nossos-projetos{
     display: grid;
     grid-template-columns: auto;
-    border: 3px solid var(--SERENIDADE-ESPIRITUAL);
+    border: 3px solid black;
     padding: var(--space-1);
     margin-bottom: var(--space-2);
     background-color: var(--SUAVE-AMARELO);
     color :black;
     font-family: Arial;
-    font-size: bold;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: var(--space-1);
-    border-bottom: 2px solid var(--SERENIDADE-ESPIRITUAL);
-    box-shadow: 2px 2px 5px var(--SERENIDADE-ESPIRITUAL);
+    border-bottom: 2px solid black;
+    box-shadow: 2px 2px 5px solid black;
 }
 .clinicas{
      display: grid;
     grid-template-columns: auto;
-    border: 3px solid var(--SERENIDADE-ESPIRITUAL);
+    border: 3px solid black;
     padding: var(--space-1);
     margin-bottom: var(--space-2);
     background-color: var(--SUAVE-AMARELO);
     color :black;
     font-family: Arial;
-    font-size: bold;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: var(--space-1);
-    border-bottom: 2px solid var(--SERENIDADE-ESPIRITUAL);
-    box-shadow: 2px 2px 5px var(--SERENIDADE-ESPIRITUAL);
+    border-bottom: 2px solid black;
+    box-shadow: 2px 2px 5px solid black;
 
 }
 .feira{
      display: grid;
     grid-template-columns: auto;
-    border: 3px solid var(--SERENIDADE-ESPIRITUAL);
+    border: 3px solid black;
     padding: var(--space-1);
     margin-bottom: var(--space-2);
     background-color: var(--SUAVE-AMARELO);
@@ -158,25 +161,82 @@ h2{
     font-family: Arial;
     font-size: bold;
     font-weight: bold;
+    font-size: 1.5rem;
     border-radius: var(--space-1);
-    border-bottom: 2px solid var(--SERENIDADE-ESPIRITUAL);
-    box-shadow: 2px 2px 5px var(--SERENIDADE-ESPIRITUAL);
+    border-bottom: 2px solid solid black;
+    box-shadow: 2px 2px 5px solid black;
 }
 .projeto-na-escola{
       display: grid;
     grid-template-columns: auto;
-    border: 3px var(--SERENIDADE-ESPIRITUAL);
+    border: 3px solid black;
     padding: var(--space-1);
     margin-bottom: var(--space-2);
     background-color: var(--SUAVE-AMARELO);
     color :black;
     font-family: Arial;
-    font-size: bold;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: var(--space-1);
-    border-bottom: 2px;
-    box-shadow: 2px 2px 5px var(--SERENIDADE-ESPIRITUAL);
+    border-bottom: 2px solid black;
+    box-shadow: 2px 2px 5px solid black;
 }
 ol{
     background-color: var(--SUAVE-AMARELO);
 }
+/*adcionando responsividade mobile*/
+@media (max-width: 767px) { 
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    details{
+        width: 100%; 
+    }
+    aside{
+         width: 100%;
+    }
+    main{
+        width: 100%;
+}
+}
+/*responsividade para tablets*/
+@media (min-widht: 767px) and (max-width: 1024px){
+      header {
+        width: 80%;
+    }
+    nav {
+        width: 80%;
+    }
+    details{
+        width: 80%; 
+    }
+    aside{
+         width: 80%;
+    }
+    main{
+        width: 80%;
+}
+}
+/*responsividade desktop*/
+@media (min-width: 1024px){
+      header {
+        width: 80%;
+    }
+    nav {
+        width: 80%;
+    }
+    details{
+        width: 80%; 
+    }
+    aside{
+         width: 80%;
+    }
+    main{
+        width: 80%;
+}
+}
+/*fim/
+    
